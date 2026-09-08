@@ -76,6 +76,12 @@
     build a profile of you, and there is no third-party ad network in the app.</p>
   </div>
 
+  <h3>Summaries</h3>
+  <p>To write the one-line summary shown beside a school message, the text of
+  that message is sent to Anthropic, which returns the summary. The summary is
+  stored; the message text is stored only in your own brief, as it always was.
+  See section 6 for what Anthropic receives and what it does not.</p>
+
   <h2>2. How We Use Your Information</h2>
   <ul>
     <li>To sign in to the school services you connected and retrieve your child's data on your behalf.</li>
@@ -156,6 +162,21 @@
       <td>Supabase</td>
       <td>All account data, credentials, academic records and briefs</td>
       <td>Database, authentication and server hosting</td>
+    </tr>
+    <tr>
+      <td>Anthropic</td>
+      <td>The text of school messages and attached documents, together with the
+      course or assignment name they arrived with</td>
+      <td>Writes the short summary that appears on your brief, so you can tell
+      what a message is about without opening it. We keep only the summary; we
+      do not send your name, your child's name, or any identifier that links the
+      message to your account. Anthropic processes it under its commercial terms
+      as our service provider, and those terms state that inputs sent through
+      its business API are not used to train its models &mdash; see
+      <a href="https://www.anthropic.com/legal/commercial-terms">Anthropic's
+      commercial terms</a> and its
+      <a href="https://privacy.anthropic.com/">privacy centre</a> for its own
+      current statements.</td>
     </tr>
     <tr>
       <td>Expo</td>
